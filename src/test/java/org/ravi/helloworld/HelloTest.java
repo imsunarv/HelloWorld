@@ -28,11 +28,19 @@ public class HelloTest {
 	}
 
 	@Test
-	public void f() {
+	public void f1() {
                 
 		//text = driver.findElement(By.xpath("html/body/h2"));
 		Assert.assertEquals(driver.getTitle(), "HelloWorld");
-		System.out.println("Test Passed");
+		System.out.println("Test f1() Passed");
+                
+	}
+	@Test
+	public void f2() {
+                
+		text = driver.findElement(By.xpath("html/body/h2"));
+		Assert.assertEquals(text, "Hello World!!! Welcome to Accenture BDC6");
+		System.out.println("Test f2() Passed");
                 
 	}
 
