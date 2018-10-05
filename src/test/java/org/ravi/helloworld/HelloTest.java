@@ -30,9 +30,9 @@ public class HelloTest {
 	@Test
 	public void f() {
                 
-		//text = driver.findElement(By.xpath("html/body/h2"));
-		Assert.assertEquals(driver.getTitle(), "HelloWorld");
-		System.out.println("Test f() Passed");
+		text = driver.findElement(By.xpath("html/body/h2"));
+		Assert.assertEquals(text.getText(), "HelloWorld");
+		
                 
 	}
 	@AfterTest
