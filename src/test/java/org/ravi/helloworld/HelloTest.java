@@ -40,7 +40,7 @@ public class HelloTest {
 		driver.close();
 	}
 
-	@BeforeTest
+	/*@BeforeTest
 	public void beforeTest() {
 		/*	System.setProperty("webdriver.gecko.driver", "resources\\geckodriver32.exe");
 		driver = new FirefoxDriver();*/
@@ -62,7 +62,7 @@ public class HelloTest {
 	@AfterTest
 	public void afterTest() {
 		driver.close();
-	}
+	} */
 
 
 }
