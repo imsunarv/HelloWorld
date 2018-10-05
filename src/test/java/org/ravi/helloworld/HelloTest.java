@@ -28,11 +28,11 @@ public class HelloTest {
 	}
 	
 	@Test
-	public void f1() {
+	public void f() {
                 
 		//text = driver.findElement(By.xpath("html/body/h2"));
 		Assert.assertEquals(driver.getTitle(), "HelloWorld");
-		System.out.println("Test f1() Passed");
+		System.out.println("Test f() Passed");
                 
 	}
 	@AfterTest
@@ -40,29 +40,6 @@ public class HelloTest {
 		driver.close();
 	}
 
-	/*@BeforeTest
-	public void beforeTest() {
-		/*	System.setProperty("webdriver.gecko.driver", "resources\\geckodriver32.exe");
-		driver = new FirefoxDriver();*/
-		System.setProperty("webdriver.chrome.driver","resources\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://localhost:8080/HelloWorld.war/");
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
-	}
-	@Test
-	public void f2() {
-                
-		text = driver.findElement(By.xpath("html/body/h2"));
-		System.out.println(text);
-		Assert.assertEquals(text, "Hello World!!! Welcome to Accenture BDC6");
-		
-                
-	}
-
-	@AfterTest
-	public void afterTest() {
-		driver.close();
-	} */
-
+	
 
 }
