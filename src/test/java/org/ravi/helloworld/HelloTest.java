@@ -53,8 +53,9 @@ public class HelloTest {
 	public void f2() {
                 
 		text = driver.findElement(By.xpath("html/body/h2"));
+		System.out.println(text);
 		Assert.assertEquals(text, "Hello World!!! Welcome to Accenture BDC6");
-		System.out.println("Test f2() Passed");
+		
                 
 	}
 
